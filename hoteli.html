@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prikaz Hotela</title>
+    <script src="assets/plugins/jquery/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="assets/plugins/bootstrap-3.3.7-dist/css/bootstrap.css">
+     <link href="assets/plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css"
+	rel="stylesheet">
+	<script type="text/javascript" src="assets/plugins/jquery/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div>
+		<div>
+			<nav id="navbar" class="navbar navbar-default navbar-fixed-top">
+				<ul>
+					<li><img id="img" src="img/logo_rac.png"></li>
+					<li id="odjava" class="navbar-right">
+						<a href="Login.html"><span class="glyphicon glyphicon-log-out"></span> Odjava</a>
+					</li>
+					<!--<li><a href="">Dodaj Hotel</a></li>
+					<li><a href="">Ažuriraj Hotel</a></li>
+					<li><a href="">Obriši Hotel</a></li>-->
+				</ul>
+			</nav>
+		</div>
+		<div id="tablica" class="container">
+			<h1>Prikaz Hotela</h1>
+			<div id="hotel-btns">
+				<span>
+				
+					<label for="add">Dodaj Hotel</label>
+					<button id="add" class="btn btn-success" data-toggle="modal" data-target="#dodaj-hotel"><span class="glyphicon glyphicon-plus"></span></button>
+				</span>
+				<!--<span>
+					<label for="rezerviraj">Karte</label>
+					<button id="Karte" class="btn btn-info"><span class="glyphicon glyphicon-user"><a href="Kar"></a></span></button>
+				</span>-->
+				<span>
+					<label for="statistika">Statistika</label>
+					<button id="statistika" class="btn btn-info" data-toggle="modal" data-target="#statistika-hotela"><span class="glyphicon glyphicon-list-alt"></span></button>
+				</span>
+			</div>
+			<table id="TablicaHoteli" class="table table-stripped">
+				<thead>
+					<tr>
+						<th>R.br.</th>
+						<th>Naziv</th>
+						<th>Adresa</th>
+						<th>Grad</th>
+						<th>Županija</th>
+						<th>Ukupan Kapacitet</th>
+						<th>broj Slobodnih mjesta</th>
+						<th>Rezerviraj</th>	
+						<th>Pregled Rezervacija</th>				
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="modal fade" id="dodaj-hotel" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"></button>
+					<h4 class="modal-title">Dodaj hotel</h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<label for="inptNazivHotela">Naziv hotela</label>
+						<input type="text" class="form-control" id="inptNazivHotela">
+					</div>
+					<div class="form-group">
+						<label for="txtAdresaHotela">Adresa</label>
+						<textarea class="form-control" id="txtAdresaHotela"></textarea>
+					</div>
+					<div class="form-group">
+						<label for="txtGradHotela">Grad</label>
+						<textarea class="form-control" id="txtGradHotela"></textarea>
+					</div>
+					<div class="form-group">
+						<label for="txtZupanijaHotela">Zupanija</label>
+						<textarea class="form-control" id="txtZupanijaHotela"></textarea>
+					</div>
+					<div class="form-group">
+						<label for="txtKapacitetHotela">Kapacitet</label>
+						<textarea class="form-control" id="txtKapacitetHotela"></textarea>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button onclick="DodajHotel()" type="button" class="btn btn-success" data-dismiss="modal">Dodaj</button>
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Odustani</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="azuriraj-hotel" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"></button>
+					<h4 class="modal-title">Ažuriraj hotel</h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<label for="inptNazivHotelaEdit">Naziv hotela</label>
+						<input type="text" class="form-control" id="inptNazivHotelaEdit">
+					</div>
+					<div class="form-group">
+						<label for="txtAdresaHotelaEdit">Tekst Adresa</label>
+						<textarea class="form-control" id="txtAdresaHotelaEdit"></textarea>
+					</div>
+					<div class="form-group">
+						<label for="txtGradHotelaEdit">Tekst Grad</label>
+						<textarea class="form-control" id="txtGradHotelaEdit"></textarea>
+					</div>
+					<div class="form-group">
+						<label for="txtZupanijaHotelaEdit">Tekst Zupanija</label>
+						<textarea class="form-control" id="txtZupanijaHotelaEdit"></textarea>
+					</div>
+					<div class="form-group">
+						<label for="txtKapacitetHotelaEdit">Tekst Kapacitet</label>
+						<textarea class="form-control" id="txtKapacitetHotelaEdit"></textarea>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button id="btnEdit" type="button" class="btn btn-success" data-dismiss="modal">Ažuriraj</button>
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Odustani</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="rezerviraj-hotel" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"></button>
+					<h4 class="modal-title">Rezerviraj hotel</h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<label for="idHotelaRezerviraj">ID Hotela</label>
+						<input disabled type="text" class="form-control" id="idHotelaRezerviraj">
+					</div>
+					<div class="form-group">
+						<label for="ImeHotela">Hotel</label>
+						<input type="text" disabled class="form-control" id="ImeHotela">
+					</div>
+					<div class="form-group">
+						<label for="brojOsoba" >Broj osoba</label>
+						<input type="number" id="brojOsoba" name="quantity" min="1" max="20" >
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button  id="btnRezerviraj" type="button" class="btn btn-success">Rezerviraj</button>
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Odustani</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="Prikaz-rezervacija" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"></button>
+					<h4 class="modal-title">Prikaz Rezervacija Hotela</h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<label for="idHotelRezerviraj">ID Hotela</label>
+						<input disabled type="text" class="form-control" id="idHotelRezerviraj">
+					</div>
+					<div class="form-group">
+						<label for="ImeHotelaRezervacije">Hotel naziv</label>
+						<input type="text" disabled class="form-control" id="ImeHotelaRezervacije">
+					</div>
+					<div class="form-group">
+						<label for="rezervacije">Rezervacije</label>
+						<table id="rezervacije" class="table table-striped">
+							<thead>
+								<tr>
+									<th>R.br.</th>
+									<th>ID rezervacije</th>
+									<th>Broj rezerviranih mjesta</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Odustani</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="statistika-hotela" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"></button>
+					<h4 class="modal-title">Statistika hotela</h4>
+				</div>
+				<div class="modal-body">
+					<table id="statistikaTablica">
+						<thead>
+							<tr>
+								<td class="zaglavlje">Ukupan Broj Hotela</td>
+								<td class="zaglavlje">Ukupan Broj Gostiju</td>
+								<td class="zaglavlje">Ukupan Kapacitet Lanca Hotela</td>
+								<td class="zaglavlje">Ukupan Broj Slobodnih Mjesta</td>
+							</tr>
+						</thead>
+						<tbody >
+							<tr ></tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Zatvori</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="assets/plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-database.js"></script>
+<script src="js/firebase-config.js"></script>
+<script src="js/administracijaHoteli.js"></script>
+</html>

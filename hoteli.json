@@ -1,0 +1,112 @@
+{
+	"hoteli":{
+		"1":
+		{
+			"naziv" : "Esplanade Zagreb",
+			"adresa": "Mihanoviceva 1",
+			"grad": "Zagreb",
+			"zupanija": 2,
+			"kapacitet": 416
+		},
+		"2":
+		{
+			"naziv": "Demar Residence",
+			"adresa": "Nikole Bozidarevica 13",
+			"grad": "Zadar",
+			"zupanija": 3,
+			"kapacitet": 380
+
+		},
+		"3":
+		{
+			"naziv": "Falkensteiner Hotel & Spa Iadera",
+			"adresa": "Punta Skala" ,
+			"grad": "Zadar",
+			"zupanija": 3,
+			"kapacitet": 450
+		},
+		"4":
+		{
+			"naziv": "Family Hotel Amarin",
+			"adresa": "Val de Lesso 5",
+			"grad": "Rovinj",
+			"zupanija": 4,
+			"kapacitet": 500
+		},
+		"5":
+		{
+			"naziv": "Hotel Aurora",
+			"adresa": "Suncana uvala 4",
+			"grad": "Mali Losinj",
+			"zupanija": 6,
+			"kapacitet": 400
+		},
+		"6":
+		{
+			"naziv": "Hotel Biokovo",
+			"adresa": "Obala Kralja Tomislava 14",
+			"grad": "Makarska",
+			"zupanija": 5,
+			"kapacitet": 300
+		},
+		"7":
+		{
+			"naziv": "Hotel Osijek",
+			"adresa": "Samacka 4",
+			"grad": "Osijek",
+			"zupanija": 1,
+			"kapacitet": 370
+		},
+		"8":
+		{
+			"naziv": "Valamar Riviera Hotel & Residence",
+			"adresa": "Obala marsala Tita 15",
+			"grad": "Porec",
+			"zupanija": 4,
+			"kapacitet": 290
+		}
+	},
+		"zupanije":{
+		"1":
+			{
+				"naziv" :"Osjecko-baranjska"
+			},
+		"2":
+			{
+				"naziv" :"Zagrebacka"
+			},
+		"3":	
+			{
+				"naziv" :"Zadarska"
+			},
+		"4":	
+			{
+				"naziv": "Istarska"
+			},
+		"5":
+			{
+				"naziv": "Splitsko-dalmatinska"
+			},
+		"6":	
+			{
+				"naziv": "Primorsko-Goranska"
+			}	
+	},
+	"administratori":{
+		"1":
+		{
+			"ime":"Pero",
+			"prezime": "Peric",
+			"username": "pero.peric",
+			"password": "1234567890"		
+		}
+
+	},
+	"boravak":{
+		"1":
+		{
+			"hotelId": 1,
+			"brojKreveta": 3
+		}
+	}
+}

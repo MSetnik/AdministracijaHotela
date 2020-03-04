@@ -1,0 +1,89 @@
+Hoteli
+	1.
+	Naziv: Esplanade Zagreb
+	Adresa: Mihanoviceva 1
+	Grad: Zagreb
+	Županija: 2
+	Kapacitet: 416
+	Broj Soba: 208
+	Broj Gostiju: 0
+
+
+	2. 
+	naziv: Demar Residence
+	adresa: Nikole Božidarevica 13
+	Grad: Zadar
+	Županija: 3
+	Kapacitet: 380
+	Broj Soba: 180
+	Broj Gostiju: 0
+
+	3.
+	naziv: Falkensteiner Hotel & Spa Iadera
+	adresa:	Punta Skala 
+	grad: Zadar
+	županija: 3
+	Kapacitet: 450
+	Broj Soba: 220
+	Broj Gostiju: 0
+	
+	4. 
+	naziv: Family Hotel Amarin
+	adresa:	Val de Lesso 5
+	grad: Rovinj
+	županija: 4
+	Kapacitet: 500
+	Broj Soba: 250
+	Broj Gostiju: 0
+
+	5.	
+	naziv: Hotel Aurora
+	adresa:	Suncana uvala 4
+	grad: Mali Lošinj
+	županija: 6
+	Kapacitet: 400
+	Broj Soba: 190
+	Broj Gostiju: 0
+
+
+	6.	
+	naziv: Hotel Biokovo
+	adresa:	Obala Kralja Tomislava 14
+	grad: Makarska
+	županija: 5
+	Kapacitet: 300
+	Broj Soba: 120
+	Broj Gostiju: 0
+
+
+	7.	
+	naziv: Hotel Osijek
+	adresa:	Samacka 4
+	grad: Osijek
+	županija: 1
+	Kapacitet: 370
+	Broj Soba: 186
+	Broj Gostiju: 0
+
+
+	8.	
+	naziv: Valamar Riviera Hotel & Residence
+	adresa:	Obala maršala Tita 15
+	grad: Porec
+	županija: 4
+	Kapacitet: 290
+	Broj Soba: 100
+	Broj Gostiju: 0
+
+
+
+
+Županije
+	Osijecko-baranjska: 1
+	Zagrebacka: 2
+	Zadarska: 3
+	Istarska: 4
+	Splitsko-dalmatinska: 5
+	Primorsko-Goranska: 6
+	
+	

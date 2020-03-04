@@ -1,0 +1,83 @@
+#tablica
+{
+	margin:50px;
+}
+
+body
+{
+	background:#dff0d8;
+}
+
+#navbar
+{
+	background: #7f1414a1;
+}
+
+#img
+{
+	width: 70px;
+	top:0px;
+	left:0px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding-left: 0px;
+  overflow: hidden;
+}
+
+li
+{
+	display: inline-block;
+	float:left;
+	padding-left: 10px;
+}
+
+li a {
+  display: block;
+  color: white;
+  border:solid #0000000f;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover
+{
+	background-color: #b73333b3; 
+	color:white;
+}
+
+a:link
+{
+	text-decoration:none;
+}
+
+.zaglavlje
+{
+	font-weight: 700;
+}
+
+#TijeloStatistikaTablica td
+{
+	border-top:solid #0000004a 1px;
+	border-bottom: solid #0000004a 1px;
+	padding: 10px;
+}
+
+#odjava
+{
+	padding-right:20px;
+	
+}
+
+#hotel-btns
+{
+	margin:20px 0;
+}
+
+#TablicaHoteli
+{
+	margin-left: 70px;
+}

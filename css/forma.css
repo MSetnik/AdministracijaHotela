@@ -1,0 +1,57 @@
+h1.naslov
+{
+	color:white;
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+table tr td
+{
+	padding:10px 0px;
+	padding-left:25px;
+}
+
+table tr td:first-child
+{
+	text-align: center;
+}
+
+input 
+{
+	padding:7px;
+	margin-left: 10px;
+	width:200px; 
+}
+
+select
+{
+	padding:7px;
+	margin-left: 10px;
+	width:220px;
+}
+
+body
+{
+	background:url('../img/bg.jpg');
+}
+#FormLogin
+{
+	margin:100px auto;
+	width:450px;
+	padding:25px 35px;
+}
+
+button
+{
+	padding: 10px 10px;
+}
+
+td
+{
+	color:white;
+}
+
+input
+{
+	color: black;
+}

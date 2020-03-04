@@ -1,0 +1,3 @@
+za iduci put
+login
+tablica svih hotela sa live pretragom (kako upisem u pretragu tako se tablica automatski filtrira)
